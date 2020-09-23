@@ -1,0 +1,5 @@
+build: 
+  docker: 
+      worker: Dockerfile
+run:
+   worker: make docker && docker-compose -f configs/demo/default/docker-compose.yml up -d
